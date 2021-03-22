@@ -1,0 +1,9 @@
+1. inline css ( html style attribute ) overrides css rules in style tag and css file
+2. rules that appear later in the code override earlier rules if both have the same specificity.
+3. A css rule with !important always takes precedence.
+
+Specificity for single selectors from highest to lowest:
+
+* ids (example: #main selects <div id="main">)
+* classes (ex.: .myclass), attribute selectors (ex.: [href=^https:]) and pseudo-classes (ex.: :hover)
+* elements (ex.: div) and pseudo-elements (ex.: ::before)
