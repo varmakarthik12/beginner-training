@@ -1,0 +1,14 @@
+{
+  "name": "beginner-training",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:varmakarthik12/beginner-training.git",
+  "author": " None",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "scripts": {
+    "http": "http-server ./"
+  }
+}
