@@ -10,6 +10,7 @@
   },
   "scripts": {
     "http": "http-server ./",
-    "something": "node ./node-javascript/init.js"
+    "something": "node ./node-javascript/init.js",
+    "importScript": "node ./node-javascript/import.js"
   }
 }
