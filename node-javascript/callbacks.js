@@ -6,7 +6,7 @@ let j = (m) => {
     console.log("before")
     setTimeout(() => {
         m()
-    }, 600)
+    }, 2000)
     console.log("after")
 }
 j(m)
