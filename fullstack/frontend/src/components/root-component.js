@@ -2,16 +2,14 @@ import React from "react";
 import { useSomeStateHook } from "../hooks/someHook";
 
 export const SomeFunctionalComponent = (props) => {
-    // const [someState, setSomeState] = useSomeStateHook()
-    // const inputProps = {
-    //     onChange: (...args) => {
-    console.log("asdfjasdflkasjdflkasjflksdjf");
-    //         console.log({ args })
-    //     }
-    // }
+    const { someState: alisedState, setState } = useSomeStateHook()
+    const inputProps = {
+        onChange: (e) => {
+            setState(e?.target?.value)
+        },
+        value: alisedState
+    }
 
-    // <input type="text" onChange={() => {
-    //     console.log("sadfasdf");
-    // }} />
-    return <div onClick={() => { console.log("hjsdfhajklsdhfjksahfjklsadhfj"); }}> asdfasdf </div>
+
+    return <input type="text" {...inputProps} />
 }
