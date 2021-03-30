@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "outDir": "dist", "target": "ES2016", "sourceMap": true, "strict": true
+    },
+    "include": ["**/*.ts"]
+}

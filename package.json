@@ -12,5 +12,9 @@
     "http": "http-server ./",
     "something": "node ./node-javascript/init.js",
     "importScript": "node ./node-javascript/import.js"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.0",
+    "style-loader": "^2.0.0"
   }
 }

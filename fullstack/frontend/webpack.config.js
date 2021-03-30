@@ -12,6 +12,7 @@ module.exports = {
         // the filename of the JS bundle will be bundle.js
         filename: 'bundle.js'
     },
+    devtool: "eval-cheap-module-source-map",
     module: {
         rules: [
             {
@@ -25,6 +26,13 @@ module.exports = {
                     // attach the presets to the loader (most projects use .babelrc file instead)
                     presets: ["@babel/preset-env", "@babel/preset-react"]
                 }
+            }, {
+                // all css files
+                test: /\.css?$/,
+                // ignore transpiling JavaScript from node_modules as it should be that state
+                exclude: /node_modules/,
+                // use styleloader for transpiling css to cssInJs
+                use: ["style-loader", "css-loader"]
             }
         ]
     },
